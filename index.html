@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sherin's Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="./index.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="sidebar">
+          <li onclick="closeSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+          <li><a href="#">About Me</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Skills</a></li>
+          <li><a href="#">My Resume</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+
+        <ul>
+          <li class="hideOnMobile"><a href="#">About Me</a></li>
+          <li class="hideOnMobile"><a href="#">Projects</a></li>
+          <li class="hideOnMobile"><a href="#">Skills</a></li>
+          <li class="hideOnMobile"><a href="#">My Resume</a></li>
+          <li class="hideOnMobile"><a href="#">Contact</a></li>
+          <li class="menu-btn" onclick="showSidebar()">
+            <a href="#"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="#24313b"
+              >
+                <path
+                  d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+                /></svg
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="about-me">
+      <div class="about-me description">
+        <h2>About Me</h2>
+
+        <p>
+          My name is <span>S</span>herin. I am a junior web developer. I am
+          coming from a business and customer sucess background. I first found
+          an interest in programing and made it a hobby which then turn into a
+          new passion the more I learn and dug into it. I am now making a career
+          switch and eager to keep on learning!
+        </p>
+      </div>
+
+      <div class="about-me photo">
+        <img src="./ressources/images/CV-picture.JPG" />
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div>Project one</div>
+      <div>project two</div>
+      <div>project three</div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <img class="icon" src="./ressources/icons/HTML.svg" alt="" />
+      <img class="icon" src="./ressources/icons/CSS.svg" alt="" />
+      <img class="icon" src="./ressources/icons/JavaScript.svg" alt="" />
+      <img class="icon" src="./ressources/icons/Sass.svg" alt="" />
+      <img class="icon" src="./ressources/icons/React-Light.svg" alt="" />
+      <img src="./ressources/icons/VueJS-Light.svg" alt="" />
+    </section>
+  </body>
+
+  <footer>
+    <label
+      >made with
+      <span><img src="./ressources/icons/heart-red-svgrepo-com.svg" /></span>
+      in Stockholm</label
+    >
+  </footer>
+  <script src="./script.js"></script>
+</html>
