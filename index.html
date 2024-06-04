@@ -9,22 +9,39 @@
   </head>
   <body>
     <header>
+      <!---------Navigation of the page-------->
       <nav>
+        <div>
+          <img class="logo" src="./ressources/images/portfolio.png" />
+        </div>
         <ul class="sidebar">
-          <li onclick="closeSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
-          <li><a href="#">About Me</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Skills</a></li>
-          <li><a href="#">My Resume</a></li>
-          <li><a href="#">Contact</a></li>
+          <li onclick="closeSidebar()">
+            <a href="#"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="#e8eaed"
+              >
+                <path
+                  d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+                /></svg
+            ></a>
+          </li>
+          <li><a href="#home">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#resume">My Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
 
         <ul>
-          <li class="hideOnMobile"><a href="#">About Me</a></li>
-          <li class="hideOnMobile"><a href="#">Projects</a></li>
-          <li class="hideOnMobile"><a href="#">Skills</a></li>
-          <li class="hideOnMobile"><a href="#">My Resume</a></li>
-          <li class="hideOnMobile"><a href="#">Contact</a></li>
+          <li class="hideOnMobile"><a href="#home">About Me</a></li>
+          <li class="hideOnMobile"><a href="#projects">Projects</a></li>
+          <li class="hideOnMobile"><a href="#skills">Skills</a></li>
+          <li class="hideOnMobile"><a href="#resume">My Resume</a></li>
+          <li class="hideOnMobile"><a href="#contact">Contact</a></li>
           <li class="menu-btn" onclick="showSidebar()">
             <a href="#"
               ><svg
@@ -43,29 +60,65 @@
       </nav>
     </header>
 
-    <section id="about-me">
-      <div class="about-me description">
+    <!----Personal introduction-->
+    <section id="home">
+      <div class="about-me item">
         <h2>About Me</h2>
 
         <p>
-          My name is <span>S</span>herin. I am a junior web developer. I am
+          My name is <span>Sherin</span>. I am a junior web developer. I am
           coming from a business and customer sucess background. I first found
           an interest in programing and made it a hobby which then turn into a
           new passion the more I learn and dug into it. I am now making a career
           switch and eager to keep on learning!
         </p>
+
+        <p>In my free time I enjoy :</p>
+        <div class="hobbies">
+          <img src="./ressources/images/computer-engineer.png" />
+          <img src="./ressources/images/watching-tv.png" />
+          <img src="./ressources/images/meditation.png" />
+          <img src="./ressources/images/gamepad.png" />
+          <img src="./ressources/images/reading-book.png" />
+          <img src="./ressources/images/music.png" />
+        </div>
       </div>
 
-      <div class="about-me photo">
-        <img src="./ressources/images/CV-picture.JPG" />
+      <div class="about-me item">
+        <img class="about-me-photo" src="./ressources/images/CV-picture.JPG" />
       </div>
     </section>
 
+    <!------Display of the projects done-->
+
     <section id="projects">
       <h2>Projects</h2>
-      <div>Project one</div>
-      <div>project two</div>
-      <div>project three</div>
+      <div class="wrapper">
+      <div>
+       <a href="https://github.com/"> <img class="pjt-illustration" src="./ressources/images/placeholder-img.jpg" /> </a> 
+        <p>first project title</p>
+      </div>
+      <div>
+        <a  href="https://github.com/">
+        <img class="pjt-illustration" src="./ressources/images/placeholder-img.jpg" /></a>
+        <p>second project title</p>
+      </div>
+      <div>
+        <a  href="https://github.com/">
+        <img class="pjt-illustration" src="./ressources/images/placeholder-img.jpg" /></a>
+        <p>third project title</p>
+      </div>
+      <div>
+        <a  href="https://github.com/">
+        <img class="pjt-illustration" src="./ressources/images/placeholder-img.jpg" /> </a>
+        <p>fourth project title</p>
+      </div>
+      <div>
+        <a href="https://github.com/">
+        <img class="pjt-illustration" src="./ressources/images/placeholder-img.jpg" /></a>
+        <p>fifth project title</p>
+      </div>
+    </div>
     </section>
 
     <section id="skills">
@@ -75,7 +128,7 @@
       <img class="icon" src="./ressources/icons/JavaScript.svg" alt="" />
       <img class="icon" src="./ressources/icons/Sass.svg" alt="" />
       <img class="icon" src="./ressources/icons/React-Light.svg" alt="" />
-      <img src="./ressources/icons/VueJS-Light.svg" alt="" />
+      <img class="icon" src="./ressources/icons/VueJS-Light.svg" alt="" />
     </section>
   </body>
 
